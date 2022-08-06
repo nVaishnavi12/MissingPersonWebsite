@@ -1,0 +1,34 @@
+<table class="table table-success table-striped">
+
+
+
+
+
+
+
+    <tr>
+        <th>first_name</th>
+        <th>last_name</th>
+        
+        <th>found_Location</th>
+        <th>email</th>
+        <th>phone_num</th>
+        <th>date_found</th>
+
+
+    </tr>
+    {% for row in contacts %}
+    <tr>
+        <td>{{row.0}}</td>
+        <td>{{row.1}}</td>
+        <td>{{row.2}}</td>
+        <td>{{row.3}}</td>
+        <td>{{row.4}}</td>
+        <td>{{row.5}}</td>
+        <td>{{row.6}}</td>
+
+        <td>
+    {% endfor %}
+
+
+  </table>
